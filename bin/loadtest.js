@@ -43,7 +43,8 @@ var options = stdio.getopt({
 	debug: {description: 'Show debug messages'},
 	insecure: {description: 'Allow self-signed certificates over https'},
 	key: {args: 1, description: 'The client key to use'},
-	cert: {args: 1, description: 'The client certificate to use'}
+	cert: {args: 1, description: 'The client certificate to use'},
+	proxy: {args: 1, description: 'The proxy to use with requests in this format ip:port'}
 });
 if (options.version)
 {
